@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    margin: 8px auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+p {
+    text-align: justify;
+}

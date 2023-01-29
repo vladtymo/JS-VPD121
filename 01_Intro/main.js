@@ -11,6 +11,7 @@ let account = {
     password: "Qwerty"
 }
 let array = [1, 55.5, "red", 'green', true, [1, 2, 3], account];
+let addFunc = (a, b) => console.log("Result:", a + b);
 
 // ---------------------- data types ----------------------
 console.log("Count: " + count + ", type: " + typeof (count));
@@ -21,6 +22,7 @@ console.log(`Flag: ${flag}, type: ${typeof (flag)}`);
 console.log(`Symbol: ${symbol}, type: ${typeof (symbol)}`);
 console.log(`Login: ${account.login}, account type: ${typeof (account)}`);
 console.log(`Array: ${array}, array type: ${typeof (array)}`);
+console.log(`Func: ${addFunc}, func type: ${typeof (addFunc)}`);
 
 // JS has week typing
 // we can change types in runtime

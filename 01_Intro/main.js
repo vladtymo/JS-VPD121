@@ -51,3 +51,11 @@ else alert("Exit!");
 
 // step: value ** step
 console.log(`Power of 2^10: ${2 ** 10}`);
+
+// ---------------------- functions ----------------------
+
+function summ(a, b) {
+    console.log("Result: ", a + b);
+}
+
+summ(5, 8);

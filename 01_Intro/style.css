@@ -14,4 +14,11 @@ h1 {
 
 p {
     text-align: justify;
+    text-decoration: underline;
+}
+
+.super-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
 }

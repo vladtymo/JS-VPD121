@@ -18,7 +18,7 @@ class Car {
         this.color = newColor;
     }
     render() {
-        document.write(`Car: ${this.model}, color: ${this.color}, year: ${this.year}`);
+        document.write(`<strong style='color: darkcyan;'>Car: ${this.model}, color: ${this.color}, year: ${this.year}</strong>`);
     }
 
     // getter / setter
@@ -58,6 +58,7 @@ class PoliceCar extends Car {
     }
     print() {
         super.print(); // base class method
+
         console.log("Volume: " + this.volume + "!");
     }
 }

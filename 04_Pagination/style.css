@@ -1,0 +1,14 @@
+#list {
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 350px;
+    padding: 0;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Buttons</title>
+</head>
+
+<body>
+    <h1>Dynamic Buttons</h1>
+    <hr>
+    <button id="add-btn">Add Item</button>
+    <ul id="list">
+
+    </ul>
+
+    <script>
+        const btn = document.getElementById('add-btn');
+        const list = document.getElementById('list');
+
+        let count = 0;
+
+        btn.onclick = () => {
+            list.innerHTML += `
+            <li id='item-${++count}'>
+                Element [${count}]
+                <button onclick='deleteItem(${count})'>Delete</button>
+            </li>`;
+        }
+
+        function deleteItem(id) {
+            const child = list.querySelector(`#item-${id}`);
+            list.removeChild(child);
+        }
+    </script>
+</body>
+
+</html>

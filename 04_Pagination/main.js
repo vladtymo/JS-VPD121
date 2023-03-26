@@ -20,15 +20,29 @@ let pagination = {
     }
 };
 
-async function getServerData(url) {
+// 1 - working with Promise by using async/await
+// async function getServerData(url) {
+//     // send GET HTTP request
+//     const response = await fetch(url);
+//     console.log('Status code: ' + response.status);
+
+//     const data = await response.json();
+//     console.log(data);
+
+//     return data;
+// }
+// 2 - working with Promise by using .then()
+function getServerData(url) {
     // send GET HTTP request
-    const response = await fetch(url);
-    console.log('Status code: ' + response.status);
-
-    const data = await response.json();
-    console.log(data);
-
-    return data;
+    return fetch(url).then((response) => {
+        console.log('Status code: ' + response.status);
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+        return data;
+    }).catch(err => {
+        console.error(err);
+    });
 }
 
 async function showProducts() {
